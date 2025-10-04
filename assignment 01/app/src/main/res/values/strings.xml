@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Climb Game</string>
+
+    <string name="btn_climb">Climb</string>
+    <string name="btn_fall">Fall</string>
+    <string name="btn_reset">Reset</string>
+
+    <string name="cd_score">Current score</string>
+    <string name="cd_btn_climb">Climb to next hold</string>
+    <string name="cd_btn_fall">Fall and lose points</string>
+    <string name="cd_btn_reset">Reset game from top</string>
+
+    <string name="title_main">Climb Game</string>
+    <string name="msg_blocked_after_fall">Cannot climb after a fall. Press Reset at top.</string>
+    <string name="msg_fall_before_start">Cannot fall before reaching the first hold.</string>
+    <string name="msg_fall_at_top">At the top. You cannot lose points.</string>
+    <string name="msg_reset_only_at_top">Reset is only allowed at the top.</string>
+
+    <string name="cd_hold">Climbing hold %1$d</string>
+    <string name="btn_language">Language</string>
+    <string name="cd_btn_language">Switch language</string>
+</resources>
