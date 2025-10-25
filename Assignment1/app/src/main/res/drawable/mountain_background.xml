@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mountain base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#8B4513" />
+        </shape>
+    </item>
+    
+    <!-- Mountain levels -->
+    <item android:top="200dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#A0522D" />
+        </shape>
+    </item>
+    
+    <item android:top="100dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#CD853F" />
+        </shape>
+    </item>
+    
+    <!-- Mountain peak -->
+    <item android:top="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#DEB887" />
+        </shape>
+    </item>
+</layer-list>
+
+
+
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assignment21</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_rating">Rating</string>
+    <string name="item_category">Category</string>
+    <string name="item_price">Price</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="borrow_button">Borrow</string>
+    <string name="booking_status">Booking Status</string>
+    <string name="booking_confirmed">Booking confirmed for %s!</string>
+    <string name="booking_cancelled">Booking cancelled</string>
+    <string name="booked_item">Booked: %s for %d month(s)</string>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Trò Leo Núi</string>
+
+    <string name="btn_climb">Leo</string>
+    <string name="btn_fall">Rơi</string>
+    <string name="btn_reset">Đặt lại</string>
+
+    <string name="cd_score">Điểm hiện tại</string>
+    <string name="cd_btn_climb">Leo lên mấu tiếp theo</string>
+    <string name="cd_btn_fall">Rơi và mất điểm</string>
+    <string name="cd_btn_reset">Đặt lại trò chơi từ đỉnh</string>
+
+    <string name="title_main">Trò Leo Núi</string>
+    <string name="msg_blocked_after_fall">Không thể leo sau khi đã rơi. Chỉ đặt lại khi ở đỉnh.</string>
+    <string name="msg_fall_before_start">Chưa đạt mấu 1 nên không thể rơi.</string>
+    <string name="msg_fall_at_top">Đang ở đỉnh. Bạn không thể mất điểm.</string>
+    <string name="msg_reset_only_at_top">Chỉ được đặt lại khi đang ở đỉnh.</string>
+    <string name="cd_hold">Mấu leo %1$d</string>
+    <string name="btn_language">Ngôn ngữ</string>
+    <string name="cd_btn_language">Chuyển đổi ngôn ngữ</string>
+</resources>
+

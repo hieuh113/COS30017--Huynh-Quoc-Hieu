@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain_background"
+    tools:context=".MainActivity">
+
+    <!-- Language toggle button -->
+    <ImageButton
+        android:id="@+id/btnLanguage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_language"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_btn_language"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Score at top -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:text="0"
+        android:textColor="@color/white"
+        android:background="@android:color/black"
+        android:padding="16dp"
+        android:contentDescription="@string/cd_score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLanguage"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        tools:text="12" />
+
+    <!-- Mountain levels with holds -->
+    <LinearLayout
+        android:id="@+id/mountainLevels"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvScore"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Level 3 (Top) - Red holds -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#80000000">
+            
+            <ImageView android:id="@+id/hold7" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_red" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold8" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_red" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold9" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_red" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <!-- Level 2 (Middle) - Green holds -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#80000000">
+            
+            <ImageView android:id="@+id/hold4" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_green" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold5" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_green" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold6" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_green" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+        </LinearLayout>
+
+        <!-- Level 1 (Bottom) - Blue holds -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#80000000">
+            
+            <ImageView android:id="@+id/hold1" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_blue" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold2" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_blue" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+            <ImageView android:id="@+id/hold3" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/hold_blue" android:contentDescription="@string/cd_hold" android:layout_margin="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Character climber -->
+    <ImageView
+        android:id="@+id/character"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/character_climber"
+        android:contentDescription="Climber character"
+        app:layout_constraintTop_toTopOf="@+id/mountainLevels"
+        app:layout_constraintStart_toStartOf="@+id/mountainLevels"
+        app:layout_constraintEnd_toEndOf="@+id/mountainLevels"
+        app:layout_constraintBottom_toBottomOf="@+id/mountainLevels" />
+
+    <!-- Buttons at bottom -->
+    <LinearLayout
+        android:id="@+id/buttonRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#CC000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnClimb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_climb"
+            android:contentDescription="@string/cd_btn_climb" />
+
+        <Button
+            android:id="@+id/btnFall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/btn_fall"
+            android:contentDescription="@string/cd_btn_fall" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_reset"
+            android:contentDescription="@string/cd_btn_reset" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

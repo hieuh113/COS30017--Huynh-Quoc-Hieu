@@ -1,0 +1,13 @@
+This is a test file created for internal testing purposes.
+
+File created on: $(date)
+Project: Android Studio Week 2
+Purpose: Testing file operations
+
+Content:
+- Line 1: Basic text content
+- Line 2: Testing file write operations
+- Line 3: Internal development testing
+- Line 4: File system access verification
+
+End of test file.
