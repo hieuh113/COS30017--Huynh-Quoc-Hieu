@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Custom colors for the rental app -->
+    <color name="primary_text">#FF212121</color>
+    <color name="secondary_text">#FF757575</color>
+    <color name="price_color">#FF4CAF50</color>
+    <color name="button_primary">#FF2196F3</color>
+    <color name="button_secondary">#FF757575</color>
+    <color name="background_light">#FFF5F5F5</color>
+    <color name="accent_color">#FFFF9800</color>
+</resources>
